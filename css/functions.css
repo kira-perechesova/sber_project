@@ -1,0 +1,33 @@
+.alert{
+    width: 80%;
+    height: 55px;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
+.alert-success{
+    border: 5px solid green;
+}
+.alert-danger{
+    border: 5px solid red;
+}
+
+/* button */
+.close{
+    height: 35px;
+    width: 35px;
+    margin-left: 70%;
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 480px){
+    .alert{
+        height: 80px;
+    }
+    .close{
+        margin-left: 45%;
+    }
+}

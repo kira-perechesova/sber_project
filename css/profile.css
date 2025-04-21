@@ -1,0 +1,174 @@
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 6px solid #70B041;
+    
+    top: 24%;
+    right: 0;
+    position: absolute;
+    margin-right: 20%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    width: 100%;
+    text-align: right;
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.upload_button{
+    flex-direction: row;
+    /* justify-content: right; */
+    /* align-items: center; */
+    gap: 10px;
+    width: 50px;
+    height: 50px;
+    background: #70B041;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    padding-top: 5px;
+}
+
+.upload_button_to_center{
+    text-align: right;
+    margin-top: 23%;
+    margin-right: 24%;
+}   
+h1 {
+    margin-top: 120px;
+    margin-left: 100px;
+    position: absolute;
+    top: 0; 
+    z-index: 10;
+}
+
+
+.yellow_circle{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    width: 548px;
+    height: 510px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFCF0E 0%, #FFFFFF 100%);
+}
+.green_circle{
+    z-index: 1;
+    position: absolute;
+    width: 558px;
+    height: 510px;
+    top: 0;
+    margin-top: 270px;
+    margin-left: 200px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #70B041 0%, #FFFFFF 100%);
+    transform: rotate(-179.9deg);
+    margin-bottom: 100px;
+}
+.card_form_balance{
+    z-index: 3;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    /* left: 250.46px;
+    top: 342.08px; */
+    top: 0;
+    margin-top: 220px;
+    margin-left: 150px;
+    background: #29871D;
+    border-radius: 25px;
+    transform: matrix(1, 0.02, -0.02, 1, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    color: #FFFFFF;
+    font-weight: 500px;
+    font-size: 30px;
+}
+.data_card{
+    display: block;
+}
+.data_number_card{
+    display: flex;
+    margin-bottom: 10px;
+}
+.h2_card{
+    margin-right: 10px;
+}
+.date_balance{
+    margin-bottom: 30px;
+}
+.date_balance h2{
+    font-size: 45px;
+}
+
+.footer__text{
+    margin-top: 400px;
+}
+
+/* mobile ................. */
+/* 480px/376px */
+@media screen and (max-width: 480px) {
+    .upload_button{
+        margin-top: 250px;
+    }
+    .upload_button_to_center{
+        margin-right: 140px;
+    }
+    .hello_user{
+        margin-left: 20px;
+    }
+    .profile-pic{
+        margin-right: 93px;
+        z-index: 1;
+    }
+    .yellow_circle{
+        margin-top: 570px;
+        width: 270px;
+        height: 255px;
+        margin-left: 15px;
+    }
+    .green_circle{
+        margin-top: 740px;
+        width: 280px;
+        height: 255px;
+        margin-left: 100px;
+    }
+    .footer__text{
+        margin-top: 550px;
+    }
+    .card_form_balance{
+        width: 290px;
+        height: 190px;
+        margin-top: 700px;
+        margin-left: 60px;
+    }
+    h2{
+        font-weight: 500px;
+        font-size: 17px;
+    }
+    .date_balance h2{
+        font-size: 35px;
+    }
+}

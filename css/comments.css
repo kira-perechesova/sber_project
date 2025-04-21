@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+}
+
+body{
+    background-color: #B9D6A454;
+}
+
+.com_href{
+    margin: 20px 10px 35px 10px;
+}
+.com_href a{
+    text-decoration: none;
+    color: #007041;
+}
+
+/* comment form */
+h1{
+    margin: 35px auto 20px auto;
+    font-weight: 750;
+    font-size: 40px;
+    line-height: 40px;  
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea{
+    padding: 22px;
+    height: 450px;
+    width: 90%;
+    resize: none;
+    font-weight: 510;
+    letter-spacing: 0.02em;
+    border-radius: 45px;
+    border: 0;
+    background-color: #ffff;
+    border: 3px solid #70B041;
+}
+
+textarea ::placeholder {
+    /* width: 117px;
+    height: 24px; */
+    left: 188px;
+    top: 248px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    color: #969696;
+}
+
+.send_comment_button{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 167px;
+    height: 56px;
+    background: #70B041;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin: 10px auto 50px auto;
+}
+
+/* stars */
+section{
+    display: flex;
+    /* justify-content: center; */
+    direction: rtl;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+section input[type=radio]{
+    display: none;
+}
+
+label{
+    background-color: #b9d6a409;
+    margin: 0 2px;
+}
+
+label svg{
+    width: 40px;
+    height: 40px;
+}
+
+label svg path{
+    fill: #fff;
+    /* fill: #B9D6A454; */
+    transition: 0.2s all ease-in-out;
+}
+
+input:not(:checked) ~ label:hover svg path,
+input:not(:checked) ~ label:hover ~ label svg path{
+    fill: #FFCF0E;
+}
+
+input:checked ~ label svg path{
+    fill: #FFCF0E;
+}
+
+.all_comments_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.comment_container{
+    position: relative;
+    width: 407px;
+    height: 329px;
+    background-color: white;
+    border: 5px solid #70B041;
+    border-radius: 25px;
+    margin: 10px 0 10px 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+small{
+    margin-left: 15px;
+}
+
+
+.stars_partner{
+    display: flex;
+    gap: 250px;
+    /* margin-top: 20px; */
+}
+
+
+select#soflow-color {
+   -webkit-appearance: button;
+   /* -webkit-border-radius: 2px; */
+   /* -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); */
+   /* -webkit-padding-end: 20px; */
+   /* -webkit-padding-start: 2px; */
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: none;
+   color: #555;
+   /* font-size: inherit; */
+   height: 50px;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+   color: #fff;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#70B041, #70B041 40%, #70B041);
+   background-color: #63973e;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 15px;
+}
+
+
+#sorted_button{
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+    background: #70B041;
+    border-radius: 50%;
+    border: none;
+    color: white;
+}
+
+.all_comments_container{
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 480px){
+    .stars_partner{
+        display: inline;
+    }
+    section{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 80px;
+    }
+    .send_comment_button{
+        margin-top: 60px;
+    }
+    
+    #sorted_button{
+        width: 45px;
+        height: 45px;
+    }
+    #sorted_button svg{
+        width: 25px;
+        height: 25px;
+    }
+} 
+
+@media screen and (max-width: 376px){
+    #sorted_button svg{
+        width: 20px;
+        height: 20px;
+    }
+    #sorted_button{
+        width: 30px;
+        height: 30px;
+    }
+}

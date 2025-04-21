@@ -1,0 +1,42 @@
+.card_form {
+    padding-top: 153px;
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+    margin: 0 auto;
+}
+.contact__form input, .card_form input{
+    border-radius: 45px;
+    border: 0;
+    background-color: #D9D9D9;
+    height: 52px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.fio {
+    margin-bottom: 20px;
+}
+.bday{
+    margin-bottom: 20px;
+}
+.card_form .card_form_button {
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    letter-spacing: 0.02em;
+    appearance: none;
+    transition: 0.4s ease;
+    color: white;
+    background-color: #70B041;
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 480px){
+    .bday{
+        width: 100%;
+    }
+}
